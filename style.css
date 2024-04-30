@@ -1,0 +1,90 @@
+
+.relative .custom
+{
+  box-shadow: 0 0 50px #ca73ca, 0 0 100px #0072ff, 0 0 150px #0072ff,
+            0 0 200px #0072ff;
+  animation: animate 10s linear infinite
+}
+
+.relative  .custom:nth-child(1) {
+	left: 60px;
+	animation-delay: 0.6s;
+}
+.relative  .custom:nth-child(2) {
+	left: 10%;
+	animation-delay: 3s;
+	width: 60px;
+	height: 60px;
+}
+.relative  .custom:nth-child(3) {
+	left: 20%;
+	animation-delay: 2s;
+}
+.relative  .custom:nth-child(4) {
+	left: 30%;
+	animation-delay: 5s;
+	width: 80px;
+	height: 80px;
+}
+.relative  .custom:nth-child(5) {
+	left: 40%;
+	animation-delay: 1s;
+}
+.relative  .custom:nth-child(6) {
+	left: 50%;
+	animation-delay: 7s;
+}
+.relative  .custom:nth-child(7) {
+	left: 60%;
+	animation-delay: 6s;
+	width: 100px;
+	height: 100px;
+}
+.relative  .custom:nth-child(8) {
+	left: 70%;
+	animation-delay: 6s;
+}
+.relative  .custom:nth-child(9) {
+	left: 80%;
+	animation-delay: 3s;
+	width: 90px;
+	height: 90px;
+}
+.relative  .custom:nth-child(10) {
+	left: 90%;
+	animation-delay: 8s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	80% {
+		opacity: .7;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+
+.fa-heart {
+  color: red;
+}
+
+
+
+
+.loveMe .fa-heart {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
